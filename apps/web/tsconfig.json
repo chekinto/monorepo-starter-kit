@@ -3,6 +3,9 @@
   "compilerOptions": {
     "plugins": [
       {
+        " name": "next"
+      },
+      {
         "name": "next"
       }
     ]
