@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
@@ -10,4 +11,9 @@ export default defineConfig({
       identifiers: ({ hash }) => `repo_${hash}`
     })
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./vitest-setup.ts'],
+  }
 })
