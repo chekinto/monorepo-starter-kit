@@ -1,13 +1,13 @@
-// import "@testing-library/jest-dom";
-import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Button } from ".";
 
 describe("Button", () => {
   it("should render", () => {
-    render(<Button>test</Button>);
-
-    screen.debug();
+    render(
+      <Button size="sm" variant="primary">
+        test
+      </Button>
+    );
     expect(screen.getByText(/test/)).toBeInTheDocument();
   });
 });

@@ -1,13 +1,11 @@
-"use client";
 import { Button } from "@repo/ui/atoms";
-import { JSX } from "react";
 
-export default function Root(): JSX.Element {
+export default function Root() {
   return (
     <div>
-      <h1>Web page</h1>
+      Castle trust
       <Button size="sm" variant="secondary">
-        okoko
+        Submit
       </Button>
     </div>
   );

@@ -1,6 +1,5 @@
+import { castleTrustTheme } from "../styles/theme.css.ts";
 import type { Metadata } from "next";
-import { webTheme } from "../styles/themes.css";
-import { JSX } from "react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,10 +10,10 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>): JSX.Element {
+}>) {
   return (
     <html lang="en">
-      <body className={webTheme}>{children}</body>
+      <body className={castleTrustTheme}>{children}</body>
     </html>
   );
 }
